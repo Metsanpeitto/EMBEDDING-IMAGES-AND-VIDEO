@@ -1,0 +1,682 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>myTube</title>
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <button class="menu invisible-button">
+        <svg
+          class="gray-icon"
+          fill="#606060"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24px"
+          height="24px"
+        >
+          <path
+            d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"
+          />
+        </svg>
+      </button>
+      <img src="imgs/logo.jpg" alt="youtube logo" class="youtube-logo" />
+      <div class="search-group invisible-button">
+        <div class="search-bar invisible-button">
+          <input type="text" name="search" id="search" class="search" />
+          <button type="submit" class="search-button invisible-button">
+            <svg
+              class="search-icon"
+              fill="#000000"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24px"
+              height="24px"
+            >
+              <path
+                d="M 13.261719 14.867188 L 15.742188 17.347656 C 15.363281 18.070313 15.324219 18.789063 15.722656 19.1875 L 20.25 23.714844 C 20.820313 24.285156 22.0625 23.972656 23.015625 23.015625 C 23.972656 22.058594 24.285156 20.820313 23.714844 20.25 L 19.191406 15.722656 C 18.789063 15.324219 18.070313 15.363281 17.347656 15.738281 L 14.867188 13.261719 Z M 8.5 0 C 3.804688 0 0 3.804688 0 8.5 C 0 13.195313 3.804688 17 8.5 17 C 13.195313 17 17 13.195313 17 8.5 C 17 3.804688 13.195313 0 8.5 0 Z M 8.5 15 C 4.910156 15 2 12.089844 2 8.5 C 2 4.910156 4.910156 2 8.5 2 C 12.089844 2 15 4.910156 15 8.5 C 15 12.089844 12.089844 15 8.5 15 Z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <button class="invisible-button">
+          <svg
+            class="icon"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 470 470"
+            style="enable-background: new 0 0 470 470"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                d="M235,302.296c47.177,0,85.423-38.245,85.423-85.423V85.423C320.423,38.245,282.177,0,235,0s-85.423,38.245-85.423,85.423
+	         	v131.451C149.577,264.051,187.823,302.296,235,302.296z"
+              />
+              <path
+                d="M350.423,136.148v30h15v50.726c0,71.915-58.508,130.423-130.423,130.423s-130.423-58.507-130.423-130.423v-50.726h15v-30
+	         	h-45v80.726C74.577,300.273,138.551,369,220,376.589V440h-90.444v30h210.889v-30H250v-63.411
+	        	c81.449-7.589,145.423-76.317,145.423-159.716v-80.726H350.423z"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+      <div class="nav-buttons">
+        <button class="cam invisible-button">
+          <svg
+            version="1.1"
+            class="icon"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 60 60"
+            style="enable-background: new 0 0 60 60"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                d="M40.693,17.777H36v-5c0-1.654-1.346-3-3-3H1c-0.552,0-1,0.447-1,1s0.448,1,1,1h32c0.551,0,1,0.448,1,1v5H3.307
+		      C1.483,17.777,0,19.261,0,21.084v25.387c0,1.823,1.483,3.307,3.307,3.307h37.386c1.824,0,3.307-1.483,3.307-3.307V21.084
+		      C44,19.261,42.517,17.777,40.693,17.777z"
+              />
+              <path
+                d="M56.234,17.332c-0.545,0-1.077,0.117-1.58,0.35L46,22.138v23.279l8.654,4.456c0.503,0.232,1.035,0.35,1.58,0.35
+		      c2.076,0,3.766-1.69,3.766-3.77V21.102C60,19.022,58.311,17.332,56.234,17.332z"
+              />
+            </g>
+          </svg>
+        </button>
+
+        <button class="grid invisible-button">
+          <svg
+            class="icon"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 122.36 122.88"
+            style="enable-background: new 0 0 122.36 122.88"
+            xml:space="preserve"
+          >
+            <style type="text/css"></style>
+            <g>
+              <path
+                class="st0"
+                d="M5.85,0h20.09c3.22,0,5.85,2.63,5.85,5.85v20.09c0,3.22-2.63,5.85-5.85,5.85H5.85C2.63,31.8,0,29.16,0,25.94 V5.85C0,2.63,2.63,0,5.85,0L5.85,0z M96.42,91.08h20.09c3.22,0,5.86,2.63,5.86,5.86v20.09c0,3.22-2.63,5.86-5.86,5.86H96.42 c-3.22,0-5.86-2.63-5.86-5.86V96.94C90.56,93.72,93.2,91.08,96.42,91.08L96.42,91.08z M51.14,91.08h20.09 c3.22,0,5.86,2.63,5.86,5.86v20.09c0,3.22-2.63,5.86-5.86,5.86H51.14c-3.22,0-5.85-2.63-5.85-5.86V96.94 C45.28,93.72,47.92,91.08,51.14,91.08L51.14,91.08z M5.85,91.08h20.09c3.22,0,5.85,2.63,5.85,5.86v20.09 c0,3.22-2.63,5.86-5.85,5.86H5.85c-3.22,0-5.85-2.63-5.85-5.86V96.94C0,93.72,2.63,91.08,5.85,91.08L5.85,91.08z M96.42,45.54 h20.09c3.22,0,5.86,2.63,5.86,5.86v20.09c0,3.22-2.63,5.86-5.86,5.86H96.42c-3.22,0-5.86-2.63-5.86-5.86V51.4 C90.56,48.18,93.2,45.54,96.42,45.54L96.42,45.54z M51.14,45.54h20.09c3.22,0,5.86,2.63,5.86,5.86v20.09 c0,3.22-2.63,5.86-5.86,5.86H51.14c-3.22,0-5.85-2.63-5.85-5.86V51.4C45.28,48.18,47.92,45.54,51.14,45.54L51.14,45.54z M5.85,45.54h20.09c3.22,0,5.85,2.63,5.85,5.86v20.09c0,3.22-2.63,5.86-5.85,5.86H5.85C2.63,77.34,0,74.7,0,71.48V51.4 C0,48.18,2.63,45.54,5.85,45.54L5.85,45.54z M96.42,0h20.09c3.22,0,5.86,2.63,5.86,5.85v20.09c0,3.22-2.63,5.85-5.86,5.85H96.42 c-3.22,0-5.86-2.63-5.86-5.85V5.85C90.56,2.63,93.2,0,96.42,0L96.42,0z M51.14,0h20.09c3.22,0,5.86,2.63,5.86,5.85v20.09 c0,3.22-2.63,5.85-5.86,5.85H51.14c-3.22,0-5.85-2.63-5.85-5.85V5.85C45.28,2.63,47.92,0,51.14,0L51.14,0z"
+              />
+            </g>
+          </svg>
+        </button>
+
+        <button class="invisible-button">
+          <svg
+            class="icon"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 459.334 459.334"
+            style="enable-background: new 0 0 459.334 459.334"
+            xml:space="preserve"
+          >
+            <g>
+              <g>
+                <g>
+                  <path
+                    d="M175.216,404.514c-0.001,0.12-0.009,0.239-0.009,0.359c0,30.078,24.383,54.461,54.461,54.461
+      				s54.461-24.383,54.461-54.461c0-0.12-0.008-0.239-0.009-0.359H175.216z"
+                  />
+                  <path
+                    d="M403.549,336.438l-49.015-72.002c0-22.041,0-75.898,0-89.83c0-60.581-43.144-111.079-100.381-122.459V24.485
+      				C254.152,10.963,243.19,0,229.667,0s-24.485,10.963-24.485,24.485v27.663c-57.237,11.381-100.381,61.879-100.381,122.459
+      				c0,23.716,0,76.084,0,89.83l-49.015,72.002c-5.163,7.584-5.709,17.401-1.419,25.511c4.29,8.11,12.712,13.182,21.887,13.182
+      				H383.08c9.175,0,17.597-5.073,21.887-13.182C409.258,353.839,408.711,344.022,403.549,336.438z"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </button>
+
+        <button class="name invisible-button">A</button>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="main-video">
+        <div class="video">
+          <iframe
+            class="iframe-large"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/QGAX7FsOOJE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <div class="video-options">
+          <h4 class="title">
+            Animation and 3D in react-three-fiber (with Paul Henschel) — Learn
+            With Jason
+          </h4>
+          <div class="video-options-lowbar">
+            <div class="lowbar-left">
+              <h6 class="views lowbar-left-elements">28,611 views</h6>
+              <div class="dot lowbar-left-elements"></div>
+              <h6 class="data lowbar-left-elements">6 Sept 2019</h6>
+            </div>
+            <div class="lowbar-right">
+              <div class="like lowbar-right-group">
+                <svg
+                  class="icon-lowbar"
+                  width="21px"
+                  height="20px"
+                  viewBox="0 0 21 20"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+                  <title>like [#1386]</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="#606060"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Dribbble-Light-Preview"
+                      transform="translate(-219.000000, -760.000000)"
+                      fill="#000000"
+                    >
+                      <g
+                        id="icons"
+                        transform="translate(56.000000, 160.000000)"
+                      >
+                        <path
+                          class="gray-light-icon"
+                          d="M163,610.021159 L163,618.021159 C163,619.126159 163.93975,620.000159 165.1,620.000159 L167.199999,620.000159 L167.199999,608.000159 L165.1,608.000159 C163.93975,608.000159 163,608.916159 163,610.021159 M183.925446,611.355159 L182.100546,617.890159 C181.800246,619.131159 180.639996,620.000159 179.302297,620.000159 L169.299999,620.000159 L169.299999,608.021159 L171.104948,601.826159 C171.318098,600.509159 172.754498,599.625159 174.209798,600.157159 C175.080247,600.476159 175.599997,601.339159 175.599997,602.228159 L175.599997,607.021159 C175.599997,607.573159 176.070397,608.000159 176.649997,608.000159 L181.127196,608.000159 C182.974146,608.000159 184.340196,609.642159 183.925446,611.355159"
+                          id="like-[#1386]"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <h4 class="right-group-text">866</h4>
+              </div>
+              <div class="dislike lowbar-right-group">
+                <svg
+                  class="icon-lowbar"
+                  width="21px"
+                  height="20px"
+                  fill="#606060"
+                  viewBox="0 0 21 20"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+                  <title>dislike [#1387]</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="#606060"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Dribbble-Light-Preview"
+                      transform="translate(-179.000000, -760.000000)"
+                      fill="#000000"
+                    >
+                      <g
+                        id="icons"
+                        transform="translate(56.000000, 160.000000)"
+                      >
+                        <path
+                          class="gray-light-icon"
+                          d="M139.800374,612 L144.00037,612 L144.00037,600 L139.800374,600 L139.800374,612 Z M127.698085,600 L137.700376,600 L137.700376,611.979 L135.894378,618.174 C135.725328,619.224 134.776129,620 133.66103,620 C132.412581,620 131.400381,619.036 131.400381,617.847 L131.400381,612 L125.873186,612 C124.026238,612 122.659139,610.358 123.074939,608.644 L124.899837,602.109 C125.200137,600.868 126.360386,600 127.698085,600 L127.698085,600 Z"
+                          id="dislike-[#1387]"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <h4 class="right-group-text">12</h4>
+              </div>
+              <div class="share lowbar-right-group">
+                <svg
+                  class="icon-lowbar"
+                  style="enable-background: new 0 0 24 24"
+                  version="1.1"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g id="info" />
+                  <g id="icons">
+                    <path
+                      class="gray-light-icon"
+                      d="M21.7,10.2l-6.6-6C14.6,3.7,14,4.2,14,5v3c-4.7,0-8.7,2.9-10.6,6.8c-0.7,1.3-1.1,2.7-1.4,4.1   c-0.2,1,1.3,1.5,1.9,0.6C6.1,16,9.8,13.7,14,13.7V17c0,0.8,0.6,1.3,1.1,0.8l6.6-6C22.1,11.4,22.1,10.6,21.7,10.2z"
+                      id="share"
+                    />
+                  </g>
+                </svg>
+                <h4 class="right-group-text text-button">SHARE</h4>
+              </div>
+              <div class="save lowbar-right-group">
+                <svg
+                  class="icon-lowbar"
+                  width="18px"
+                  height="18px"
+                  viewBox="0 0 18 18"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+                  <title>save_alt</title>
+                  <desc>Created with Sketch.</desc>
+                  <g
+                    id="Icons"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Rounded"
+                      transform="translate(-443.000000, -1529.000000)"
+                    >
+                      <g
+                        id="Content"
+                        transform="translate(100.000000, 1428.000000)"
+                      >
+                        <g
+                          id="-Round-/-Content-/-save_alt"
+                          transform="translate(340.000000, 98.000000)"
+                        >
+                          <g>
+                            <polygon
+                              id="Path"
+                              points="0 0 24 0 24 24 0 24"
+                            ></polygon>
+                            <path
+                              class="gray-light-icon"
+                              d="M19,13 L19,18 C19,18.55 18.55,19 18,19 L6,19 C5.45,19 5,18.55 5,18 L5,13 C5,12.45 4.55,12 4,12 C3.45,12 3,12.45 3,13 L3,19 C3,20.1 3.9,21 5,21 L19,21 C20.1,21 21,20.1 21,19 L21,13 C21,12.45 20.55,12 20,12 C19.45,12 19,12.45 19,13 Z M13,12.67 L14.88,10.79 C15.27,10.4 15.9,10.4 16.29,10.79 C16.68,11.18 16.68,11.81 16.29,12.2 L12.7,15.79 C12.31,16.18 11.68,16.18 11.29,15.79 L7.7,12.2 C7.31,11.81 7.31,11.18 7.7,10.79 C8.09,10.4 8.72,10.4 9.11,10.79 L11,12.67 L11,4 C11,3.45 11.45,3 12,3 C12.55,3 13,3.45 13,4 L13,12.67 Z"
+                              id="🔹Icon-Color"
+                              fill="#1D1D1D"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <h4 class="right-group-text text-button">SAVE</h4>
+              </div>
+              <div class="dots lowbar-right-group">
+                <svg
+                  class="dots-icon icon-lowbar"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="92px"
+                  height="92px"
+                  viewBox="0 0 92 92"
+                  enable-background="new 0 0 92 92"
+                  xml:space="preserve"
+                >
+                  <path
+                    class="gray-light-icon"
+                    id="XMLID_30_"
+                    d="M21,53c-1.8,0-3.7-0.8-5-2.1c-1.3-1.3-2-3.1-2-4.9c0-1.8,0.8-3.6,2-5c1.3-1.3,3.1-2,5-2c1.8,0,3.6,0.8,4.9,2
+	c1.3,1.3,2.1,3.1,2.1,5c0,1.8-0.8,3.6-2.1,4.9C24.6,52.2,22.8,53,21,53z M50.9,50.9c1.3-1.3,2.1-3.1,2.1-4.9c0-1.8-0.8-3.6-2.1-5
+	c-1.3-1.3-3.1-2-4.9-2c-1.8,0-3.7,0.8-5,2c-1.3,1.3-2,3.1-2,5c0,1.8,0.8,3.6,2,4.9c1.3,1.3,3.1,2.1,5,2.1
+	C47.8,53,49.6,52.2,50.9,50.9z M75.9,50.9c1.3-1.3,2.1-3.1,2.1-4.9c0-1.8-0.8-3.6-2.1-5c-1.3-1.3-3.1-2-4.9-2c-1.8,0-3.7,0.8-5,2
+                   	c-1.3,1.3-2,3.1-2,5c0,1.8,0.8,3.6,2,4.9c1.3,1.3,3.1,2.1,5,2.1C72.8,53,74.6,52.2,75.9,50.9z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-information">
+          <div class="video-information-topbar">
+            <div class="circle">
+              <img
+                src="https://yt3.ggpht.com/ytc/AAUvwnhWP8-3ulTYd3mFSeyJ8vN1DWIwST4g6ES-dC4L=s48-c-k-c0x00ffffff-no-rj"
+                alt="youtube logo"
+                class="circle"
+              />
+            </div>
+
+            <div class="video-information-topbar-box-left">
+              <h4 class="video-information-topbar-box-name">Jason Lengstorf</h4>
+              <div class="video-information-topbar-box-subscribers">
+                <h6 class="lowbar-left-elements subscribers-text">16.5K</h6>
+                <h6 class="lowbar-left-elements subscribers-text">
+                  subscribers
+                </h6>
+              </div>
+            </div>
+
+            <div class="video-information-topbar-box-right">
+              <button class="button-subscription">SUBSCRIBE</button>
+            </div>
+          </div>
+          <div class="description">
+            <h4 class="description-text">
+              3D animation in the browser can be super intimidating. In this
+              episode, Paul Henschel (<a href="https://twitter.com/0xca0a"
+                >https://twitter.com/0xca0a</a
+              >) joins to teach us how to use react-three-fiber to create
+              high-performance 3D animations and shapes in the browser.
+            </h4>
+            <button class="text-button description-button invisible-button">
+              SHOW MORE
+            </button>
+          </div>
+        </div>
+        <div class="comments">
+          <h4 class="comment-text">
+            Comments are turned off.
+            <a
+              class="comment-link"
+              href="https://support.google.com/youtube/answer/9706180?hl=en-GB"
+              >Learn more
+            </a>
+          </h4>
+        </div>
+      </div>
+
+      <div class="suggestions">
+        <div class="suggestion-buttons">
+          <button class="suggestion-button suggestion-button-1">
+            Suggestion
+          </button>
+          <button class="suggestion-button">Suggestion1</button>
+          <button class="suggestion-button">Suggestion2</button>
+        </div>
+
+        <div class="suggestions-videos">
+          <a
+            href="https://www.youtube.com/watch?v=mXcawneCRHY"
+            class="video-link"
+          >
+            <div class="suggestions-video">
+              <div class="overlay"></div>
+              <div class="suggestions-video-left">
+                <img
+                  class="suggestions-video-image"
+                  src="https://i.ytimg.com/vi/mXcawneCRHY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&amp;rs=AOn4CLBNKlTo-yeqpSMj67JhnbIaOZBXaA"
+                  alt="youtube logo"
+                />
+                <div class="suggestions-video-image-time">
+                  <p class="suggestions-video-image-time-text">1:24:16</p>
+                </div>
+              </div>
+              <div class="suggestions-video-right">
+                <h4 class="suggestions-video-right-title">
+                  Introduction to Three.js (with Sarah Drasner) — Learn With
+                  Jason
+                </h4>
+                <h6 class="suggestions-video-right-text">Jason Lengstorf</h6>
+                <div class="suggestions-video-right-text-count">
+                  <h6 class="suggestions-video-right-text">12K views</h6>
+                  <div class="dot suggestions-dot"></div>
+                  <h6 class="suggestions-video-right-text">1 year</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=K2JzIUIHIhc"
+            class="video-link"
+          >
+            <div class="suggestions-video">
+              <div class="overlay"></div>
+              <div class="suggestions-video-left">
+                <img
+                  class="suggestions-video-image"
+                  src="https://i.ytimg.com/vi/K2JzIUIHIhc/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAXW4B5f6IJPm4x278tgNKeUe_CAg"
+                  alt="youtube logo"
+                />
+                <div class="suggestions-video-image-time">
+                  <p class="suggestions-video-image-time-text">59:50</p>
+                </div>
+              </div>
+              <div class="suggestions-video-right">
+                <h4 class="suggestions-video-right-title">
+                  Next-Generation 3D Graphics on the Web (Google I/O ’19)
+                </h4>
+                <h6 class="suggestions-video-right-text">
+                  Google Chrome Developers
+                </h6>
+                <div class="suggestions-video-right-text-count">
+                  <h6 class="suggestions-video-right-text">575K views</h6>
+                  <div class="dot suggestions-dot"></div>
+                  <h6 class="suggestions-video-right-text">1 year</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.youtube.com/watch?v=czi24DqUfSA"
+            class="video-link"
+          >
+            <div class="suggestions-video">
+              <div class="overlay"></div>
+              <div class="suggestions-video-left">
+                <img
+                  class="suggestions-video-image"
+                  src="https://i.ytimg.com/vi/czi24DqUfSA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCOoVNfDGDMURyRr4kbtAw-U2GZwA"
+                  alt="youtube logo"
+                />
+                <div class="suggestions-video-image-time">
+                  <p class="suggestions-video-image-time-text">1:15:05</p>
+                </div>
+              </div>
+              <div class="suggestions-video-right">
+                <h4 class="suggestions-video-right-title">
+                  Let’s learn state machines with David K. Piano! — Learn With
+                  Jason
+                </h4>
+                <h6 class="suggestions-video-right-text">Jason Lengstorf</h6>
+                <div class="suggestions-video-right-text-count">
+                  <h6 class="suggestions-video-right-text">16.5K views</h6>
+                  <div class="dot suggestions-dot"></div>
+                  <h6 class="suggestions-video-right-text">2 years</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.youtube.com/watch?v=aS41Y_eyNrU"
+            class="video-link"
+          >
+            <div class="suggestions-video">
+              <div class="overlay"></div>
+              <div class="suggestions-video-left">
+                <img
+                  class="suggestions-video-image"
+                  src="https://i.ytimg.com/vi/aS41Y_eyNrU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDQjPFz-s9ETzTjdyVT-RXhI23iJw"
+                  alt="youtube logo"
+                />
+                <div class="suggestions-video-image-time">
+                  <p class="suggestions-video-image-time-text">1:25:45</p>
+                </div>
+              </div>
+              <div class="suggestions-video-right">
+                <h4 class="suggestions-video-right-title">
+                  SMOOSHCAST: React Fiber Deep Dive with Dan Abramov
+                </h4>
+                <h6 class="suggestions-video-right-text">Smoosh Comedy</h6>
+                <div class="suggestions-video-right-text-count">
+                  <h6 class="suggestions-video-right-text">876 views</h6>
+                  <div class="dot suggestions-dot"></div>
+                  <h6 class="suggestions-video-right-text">1 year</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.youtube.com/watch?v=LhUcoCOX5JM"
+            class="video-link"
+          >
+            <div class="suggestions-video">
+              <div class="overlay"></div>
+              <div class="suggestions-video-left">
+                <img
+                  class="suggestions-video-image"
+                  src="https://i.ytimg.com/vi/LhUcoCOX5JM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDNNAugdKSNXsE25c3qGFK6uKuwFA"
+                  alt="youtube logo"
+                />
+                <div class="suggestions-video-image-time">
+                  <p class="suggestions-video-image-time-text">1:10:12</p>
+                </div>
+              </div>
+              <div class="suggestions-video-right">
+                <h4 class="suggestions-video-right-title">
+                  A History of the Infinite
+                </h4>
+                <h6 class="suggestions-video-right-text">
+                  Philosophy Overdose
+                </h6>
+                <div class="suggestions-video-right-text-count">
+                  <h6 class="suggestions-video-right-text">252K views</h6>
+                  <div class="dot suggestions-dot"></div>
+                  <h6 class="suggestions-video-right-text">1 year</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.youtube.com/watch?v=TttHkDRuyZw&t=96s"
+            class="video-link"
+          >
+            <div class="suggestions-video">
+              <div class="overlay"></div>
+              <div class="suggestions-video-left">
+                <img
+                  class="suggestions-video-image"
+                  src="https://i.ytimg.com/vi/TttHkDRuyZw/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAqVVOLLbiWJ_eIOhEod7Ly8ISnqw"
+                  alt="youtube logo"
+                />
+                <div class="suggestions-video-image-time">
+                  <p class="suggestions-video-image-time-text">2:35:45</p>
+                </div>
+              </div>
+              <div class="suggestions-video-right">
+                <h4 class="suggestions-video-right-title">
+                  Eric Dollard - History and Theory of Electricity
+                </h4>
+                <h6 class="suggestions-video-right-text">Aaron Murakami</h6>
+                <div class="suggestions-video-right-text-count">
+                  <h6 class="suggestions-video-right-text">23K views</h6>
+                  <div class="dot suggestions-dot"></div>
+                  <h6 class="suggestions-video-right-text">2 years</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=I9Pq0BVm38k"
+            class="video-link"
+          >
+            <div class="suggestions-video">
+              <div class="overlay"></div>
+              <div class="suggestions-video-left">
+                <img
+                  class="suggestions-video-image"
+                  src="https://i.ytimg.com/vi/I9Pq0BVm38k/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAgT6ZR6JxQ9xKgWUBp_-4Q944bSQ"
+                />
+                <div class="suggestions-video-image-time">
+                  <p class="suggestions-video-image-time-text">2:35:45</p>
+                </div>
+              </div>
+              <div class="suggestions-video-right">
+                <h4 class="suggestions-video-right-title">
+                  Kenji Kawai - Ghost in the Shell OST (1995) - Full Album.
+                </h4>
+                <h6 class="suggestions-video-right-text">E C</h6>
+                <div class="suggestions-video-right-text-count">
+                  <h6 class="suggestions-video-right-text">20K views</h6>
+                  <div class="dot suggestions-dot"></div>
+                  <h6 class="suggestions-video-right-text">1 year</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.youtube.com/watch?v=I9Pq0BVm38k"
+            class="video-link"
+          >
+            <div class="suggestions-video">
+              <div class="overlay"></div>
+              <div class="suggestions-video-left">
+                <img
+                  class="suggestions-video-image"
+                  src="https://i.ytimg.com/vi/JkBxyurjeI8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLD7IFX3ZOj9SZBM55GBaq0flf1hVw"
+                />
+                <div class="suggestions-video-image-time">
+                  <p class="suggestions-video-image-time-text">1:46:32</p>
+                </div>
+              </div>
+              <div class="suggestions-video-right">
+                <h4 class="suggestions-video-right-title">
+                  Set up Strapi as a CMS for Gatsby (with David Kartuzinski) —
+                  Learn WIth Jason
+                </h4>
+                <h6 class="suggestions-video-right-text">Jason Lengstorf</h6>
+                <div class="suggestions-video-right-text-count">
+                  <h6 class="suggestions-video-right-text">16K views</h6>
+                  <div class="dot suggestions-dot"></div>
+                  <h6 class="suggestions-video-right-text">1 year</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
